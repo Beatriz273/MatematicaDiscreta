@@ -14,7 +14,7 @@ for i in range(2,n2):
 
 print(primo)
 
-for j in primo:
+for j in range(primo):
     cont = 0
     if n % j == 0:
         cont += 1
