@@ -1,14 +1,24 @@
-a = 0
-b = int(input("Insira um valor para que seja calculado a raiz quadrada: "))
+A = float(input("Insira um valor para A: "))
+B = float(input("Insira um valor para A: "))
 
-def media_h():
-    res = (2 * a * b) / (a+b)
-    return res
+MH = 0
+MG = 0
+MA = 0
 
-def media_g():
-    res = (a*b) ** 0.5
-    return res
+cont = 0
+diferenca = 1
+parada = 10**-2
 
-def media_a():
-    res = (a+b) / 2 
-    return res
+while diferenca > parada:
+    MH = (2*A*B) / (A+B)
+    MA = (A+B)/2
+    A = MA
+    B = MH
+    MG = ((A*B)**0.5)
+    cont += 1
+    diferenca = MA - MH
+
+print (f"A quantidade de interações utilizadas foram: {cont} ")
+print (f"A média harmônica é: {MH}")
+print (f"A média aritmética é: {MA}")
+print (f"A média geométrica é: {MG}")

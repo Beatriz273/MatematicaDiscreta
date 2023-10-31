@@ -2,6 +2,7 @@ n  = 10011
 n2 = 100
 cont = 0
 primo = []
+total = 0
 
 
 for i in range(2,n2):
@@ -11,6 +12,7 @@ for i in range(2,n2):
             cont += 1
     if cont == 0:
         primo.append(i)
+        total += 1
 
 print(primo)
 
@@ -22,5 +24,7 @@ for j in range(primo):
         break
 if cont == 0:
     print(f"O valor {n} é primo")
+
+
 
     
