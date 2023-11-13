@@ -4,7 +4,8 @@ MH = 0
 MG = 0
 MA = 0
 A = 1
-B = 10
+B = 10**28
+
 
 cont = 0
 diferenca = 1
